@@ -58,13 +58,67 @@
 #     a=[]
 #     for i in range(size):
 #         a.append(randint(x,y))
-
 #     return a
-
 # print(build_ordered(10,100,200))
 
 
 
+#  ## question 4 #################
+
+# from random import randint
+# class Time: 
+#     def __init__(self, hour, minutes): 
+#         self.hour=hour 
+#         self.minutes=minutes 
+
+#     def difference(self,other):
+#         self_time = self.hour*60+self.minutes
+#         other_time= other.hour*60+other.minutes
+#         return other_time-self_time
+
+
+# def chek_deliver_time(time_start,time_end):
+#     if time_start.difference(time_end)<180:
+#         print("The shipment was delivered on time")
+#     else:
+#         print("Delivery not delivered on time")
+
+# def build(num):
+#     arr=[]
+#     for i in range(num):
+#         arr.append(Time(randint(0,12),randint(0,60)))
+
+#     return arr
+
+# a =Time(3,30)
+# b =Time(6,30)
+# print(a.difference(b))
+# arr= build(100)
+
+# # for i in arr:
+# #     print(i.hour,i.minutes)
+
+
+# for i in range(len(arr)-1):
+    
+#     index1=i
+#     index2=i+1
+#     chek_deliver_time(arr[index1] ,arr[index2])
+
+
+#  ## question 5 #################
+# def what(a): 
+#     length = len(a) 
+#     for i in range(2,length-1,2): 
+#         if a[i]<a[i-2]: 
+#             return False 
+#         i+=1 
+#         if a[i]>a[i-2]: 
+#             return False 
+#     return True
+
+# a = [1, 25, 3, 8, 10, 4, 20, 5] 
+# print(what(a))
 
 
 
